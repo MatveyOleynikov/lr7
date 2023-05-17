@@ -30,6 +30,14 @@ T&& mn(T&& a, T&& b){ //5
     return std::move(b); //5, 7
 } //5
 
+template <typename T> //6
+T&& mx(T&& a, T&& b){ //6
+    if (a < b){ //6
+        return a; //6
+    } //6
+    return b; //6
+} //6
+
 int main(){
 
     return 0;
