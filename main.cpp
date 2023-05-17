@@ -33,7 +33,7 @@ T mx(T& a, T& b){ //1, 2
 =======
 template <typename T> //5
 T&& mn(T&& a, T&& b){ //5
-    if (a <= b){ //5, 7
+    if (a < b){ //5, 7, 9
         return std::move(a); //5, 7
     } //5
     return std::move(b); //5, 7
