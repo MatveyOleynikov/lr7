@@ -1,7 +1,13 @@
 #include <iostream>
 
+<<<<<<< HEAD
 void swp(int& a, int& b){ //1
     int tmp = a; //1
+=======
+template <typename T> //3
+void swp(T& a, T& b){ //1, 3
+    T tmp = std::move(a); //1, 3, 4
+>>>>>>> 75d76d6 (move swap 4)
     a = b; //1
     b = tmp; //1
 } //1
