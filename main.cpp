@@ -42,10 +42,14 @@ T&& mn(T&& a, T&& b){ //5
 template <typename T> //6
 T&& mx(T&& a, T&& b){ //6
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (a >= b){ //6, 8
 =======
     if (true && a > b){ //6, 8, 10, 11
 >>>>>>> 481a455 (True on if 11)
+=======
+    if (a > b){ //6, 8, 10
+>>>>>>> bb6ab6e (rvalue-ref max 10)
          return std::move(a); //6, 8
     } //6
     return std::move(b); //6, 8
