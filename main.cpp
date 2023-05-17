@@ -1,7 +1,7 @@
 #include <iostream>
 
 void swp(int& a, int& b){ //1
-    int tmp = a; //1
+    int tmp = std::move(a); //1, 4
     a = b; //1
     b = tmp; //1
 } //1
