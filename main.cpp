@@ -41,10 +41,14 @@ T&& mn(T&& a, T&& b){ //5
 
 template <typename T> //6
 T&& mx(T&& a, T&& b){ //6
-    if (a < b){ //6
-        return a; //6
+<<<<<<< HEAD
+    if (a >= b){ //6, 8
+=======
+    if (true && a > b){ //6, 8, 10, 11
+>>>>>>> 481a455 (True on if 11)
+         return std::move(a); //6, 8
     } //6
-    return b; //6
+    return std::move(b); //6, 8
 } //6
 
 >>>>>>> 5b8f87c (rvalue-ref min with = 7)
