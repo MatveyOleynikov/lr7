@@ -29,6 +29,7 @@ T mx(T& a, T& b){ //1, 2
 } //1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 template <typename T> //5
 T&& mn(T&& a, T&& b){ //5
@@ -47,6 +48,16 @@ T&& mx(T&& a, T&& b){ //6
 } //6
 
 >>>>>>> 5b8f87c (rvalue-ref min with = 7)
+=======
+template <typename T> //5
+T&& mn(T&& a, T&& b){ //5
+    if (a > b){ //5
+        return a; //5
+    } //5
+    return b; //5
+} //5
+
+>>>>>>> 4b277c6 (rvalue-ref min with bug 5)
 int main(){
 
     return 0;
