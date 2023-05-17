@@ -57,7 +57,18 @@ T&& mn(T&& a, T&& b){ //5
     return b; //5
 } //5
 
+<<<<<<< HEAD
 >>>>>>> 4b277c6 (rvalue-ref min with bug 5)
+=======
+template <typename T> //6
+T&& mx(T&& a, T&& b){ //6
+    if (a < b){ //6
+        return a; //6
+    } //6
+    return b; //6
+} //6
+
+>>>>>>> d51f1fd (rvalue-ref max with bug 6)
 int main(){
 
     return 0;
