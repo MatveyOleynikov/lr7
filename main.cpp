@@ -32,10 +32,11 @@ T&& mn(T&& a, T&& b){ //5
 
 template <typename T> //6
 T&& mx(T&& a, T&& b){ //6
-    if (a < b){ //6
-        return a; //6
+    if (int c = a - b; a >= b){ //6, 8, 11
+        cout << c << endl; //11
+         return std::move(a); //6, 8
     } //6
-    return b; //6
+    return std::move(b); //6, 8
 } //6
 
 int main(){
